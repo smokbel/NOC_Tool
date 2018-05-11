@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="heading" id="mainHeader">
+			<div>
+				<div id="yjc">Youth Job Connection</div><br/>
+				<div id='beforeyjc'>A closer look at the occupations of Ontarios NEET youth.</div> <br/>
+				<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" width="250" height="250" viewBox="0 0 800 585" stroke="black" stroke-linecap="round" stroke-linejoin="round">
+					<path class="drawingont" d="M 475.6634 418.3177 522.4874 425.9819 512.3056 436.3705 486.2845 427.3256 475.6634 418.3177 Z M 242.5386 1 277.1266 16.013 290.1677 29.9614 365.9943 50.0781 399.223 62.9041 433.9611 60.6699 468.9668 63.3842 495.7937 70.2289 489.9507 102.3421 501.4598 117.3243 496.7334 151.6796 523.8694 170.8255 530.8163 183.2913 561.0854 198.3052 568.3775 212.6165 590.8963 219.5999 601.7536 207.9491 601.6808 264.0686 601.6986 358.8373 604.5448 375.4397 634.0164 405.5107 676.6496 411.6198 691.0849 422.9665 706.7949 425.9853 713.4567 435.7222 749.2004 438.4489 777.4196 431.4357 799 434.4049 792.5941 453.7705 763.4096 462.1595 739.2392 480.1321 664.667 495.4701 618.0748 501.7765 598.5636 512.4032 592.7399 523.4655 619.3753 523.307 623.3703 537.5822 574.3148 541.5092 559.6165 549.1357 535.235 545.8957 482.8222 570.1782 470.3716 558.248 483.9702 552.0261 491.5312 532.44 517.4617 517.6915 515.6355 491.7825 533.9287 471.561 534.075 455.2686 578.5462 476.5002 580.2885 453.0022 554.9189 421.1159 520.631 414.4648 437.6679 406.2317 412.6399 391.7908 399.3653 377.9713 406.8323 368.4235 389.5583 355.9966 397.2699 343.9452 364.8262 343.8363 347.0856 331.5703 336.1795 311.1723 305.4097 311.8745 275.5684 303.8463 251.5902 317.722 229.1844 324.1006 225.3151 335.9858 202.8763 341.3624 193.4595 336.5634 143.9547 339.0016 84.3793 316.9361 65.8028 319.9024 23.0213 313.3297 37.2071 295.7483 26.5441 273.9021 1 277.694 1.0163 209.297 1.011 154.9437 59.53 120.0036 168.1586 44.3102 237.9142 1.0279 242.5386 1 Z"/>
+				</svg>
+				<br/>
+			</div>
+		</div>
+
+		<div class="heading" id="subHeader">
+			<div class="subHeaderText">
+				<div id="paragraph">
+		      <p>Info about youth unemployment: In January 2017, there were 11.6 million people in Ontario aged 15 years or older. Of this population, 7.6 million people, or 65%, were either working or actively looking for work. 7.1 million people were employed and 80% of them had a full time job.
+          The unemployment rate was 6.4% and 484,800 people were unemployed.</p>
+          <p>Info about YJC: Youth Job Connection was developed as part of the government’s major reinvestment in the Ontario Youth Jobs Strategy, as well as its initiative to modernize and transform employment and training programs and services to make them evidence-based, better coordinated, more targeted and more effective for people across the province, including young people.</p>
+
+          <p>The Youth Job Connection program serves youth aged 15 to 29 who experience multiple and/or complex barriers to employment by providing more intensive supports beyond traditional job search and placement opportunities.
+
+          <p>Supports include: <br/>
+
+          <p>Paid pre-employment training to promote job-readiness;<br/>
+          Job matching and paid job placements, with placement supports for participants and hiring incentives for employers;<br/>
+          Mentorship services; and <br/>
+          Education and work transitions supports.<br/>
+					<p>What kind of jobs do YJC clients end up working in? How does this differ per region? The following data portrays the occupations of over 14,000 previously-NEET Youth across Ontario, who are participating in Youth Job Connection.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="section">
+		<div id="mapText" class="text">
+			<div id="initalText">
+				<div id="textHere" style="display: inline;">
+					<p style="padding-left: 20%;">Percentage of YJC Clients per region</p>
+					<div id="legendHere"></div>
+					<p>Info about youth unemployment: In January 2017, there were 11.6 million people in Ontario aged 15 years or older. Of this population, 7.6 million people, or 65%, were either working or actively looking for work. 7.1 million people were employed and 80% of them had a full time job.
+						The unemployment rate was 6.4% and 484,800 people were unemployed.</p>
+					<p>The Youth Job Connection program serves youth aged 15 to 29 who experience multiple and/or complex barriers to employment by providing more intensive supports beyond traditional job search and placement opportunities.
+					</p>
+				</div>
+			</div>
+			<div class="fixedText" id="regionText" style="padding-top: 600">
+				<div class="">
+					<h2 id="fixedEls"> Where <span id="region"></span> Youth are working</h2>
+					<div id="mapTooltip">
+						<p>
+							<div id="dropDown">
+							</div>
+							<p>Census Division: <span id='CD'></span></p>
+							<p>Count of Youth in NOC: <span id='count'></span></p>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="textBox" id="northernText">This could be northern region text</div>
+			<div class="textBox" id="westernText"></div>
+			<div class="textBox" id="easternText"></div>
+			<div class="textBox" id="centralText"></div>
+		</div>
+	<div id="mapChart" class="chart"></div>
+ </div>
+
+
+	<script src="https://d3js.org/d3.v4.js"></script>
+	<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.js"></script>
+	<script src="js\legend\d3-legend.js" charset="utf-8"></script>
+	<script src="js\legend\mapLegend.js" charset="utf-8"></script>
+	<script src="js\vis\map.js" charset="utf-8"></script>
+	<script src="js\layout.js" charset="utf-8"></script>
+	<script src="js\scroll.js" charset="utf-8"></script>
+	<script src="js\app.js" charset="utf-8"></script>
+
+</body>
