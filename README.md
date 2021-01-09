@@ -4,8 +4,10 @@ NOTE: this tool was built for MAESD and contained private data that had to be re
 
 An interactive web app with bubble map visually representing types of occupations youth are working in per census division, animating per economical region on scroll, with bubble sizes changing via data field selected by the user. 
 
+![](ezgif.com-gif-maker.gif)
 
-## TODO
+
+## TODO (Completed)
 
 ### SCROLLER
 - [x] Page scroll event tracker
@@ -15,8 +17,8 @@ An interactive web app with bubble map visually representing types of occupation
 ### D3 CHARTS
 - [x] Ontario census division map
 - - [x] Choropleth fill based on csv YJC data
-- - - [ ] Different color fills for each region
-- - - [ ] REPLACE DELETED DATA
+- - - [x] Different color fills for each region
+- - - [x] REPLACE DELETED DATA
 - - [x] Clickable and zooms on scroll
 - - [x] Data bubbles on each division
 - - - [x] Data bubbles to change with selection change on dropdown menu
